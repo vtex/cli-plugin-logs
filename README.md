@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-logs
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-logs/0.0.0 linux-x64 node-v12.18.4
+@vtex/cli-plugin-logs/0.0.0 linux-x64 node-v12.20.0
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -38,27 +38,29 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`vtex hello [FILE]`](#vtex-hello-file)
+* [`vtex logs [APP]`](#vtex-logs-app)
 
-## `vtex hello [FILE]`
+## `vtex logs [APP]`
 
-describe the command here
+Show apps production logs
 
 ```
 USAGE
-  $ vtex hello [FILE]
+  $ vtex logs [APP]
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-  -v, --verbose    Show debug level logs
-  --trace          Ensure all requests to VTEX IO are traced
+  -a, --all      Show all logs from this account's apps
+  -h, --help     show CLI help
+  -p, --past     Show logs already seen from this account's apps
+  -v, --verbose  Show debug level logs
+  --trace        Ensure all requests to VTEX IO are traced
 
-EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
+EXAMPLES
+  vtex logs
+  vtex logs appName
+  vtex logs --all
+  vtex logs appName --past
 ```
 
-_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
+_See code: [build/commands/logs.ts](https://github.com/vtex/cli-plugin-logs/blob/v0.0.0/build/commands/logs.ts)_
 <!-- commandsstop -->
