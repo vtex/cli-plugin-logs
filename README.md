@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-logs
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-logs/0.0.1 linux-x64 node-v12.20.1
+@vtex/cli-plugin-logs/0.0.1 linux-x64 node-v12.20.2
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -42,16 +42,19 @@ USAGE
 
 ## `vtex logs [APP]`
 
-Show apps production logs
+Shows logs of an app. (Only apps in production.)
 
 ```
 USAGE
   $ vtex logs [APP]
 
+ARGUMENTS
+  APP  Name of the app to show logs.
+
 OPTIONS
-  -a, --all      Show all logs from this account's apps
+  -a, --all      Shows logs of every app installed on the current account.
   -h, --help     show CLI help
-  -p, --past     Show logs already seen from this account's apps
+  -p, --past     Shows previous logs of the specified app.
   -v, --verbose  Show debug level logs
   --trace        Ensure all requests to VTEX IO are traced
 
