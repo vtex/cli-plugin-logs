@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-logs
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-logs/0.0.1 linux-x64 node-v12.21.0
+@vtex/cli-plugin-logs/0.1.0 linux-x64 node-v12.21.0
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -65,5 +65,5 @@ EXAMPLES
   vtex logs appName --past
 ```
 
-_See code: [build/commands/logs.ts](https://github.com/vtex/cli-plugin-logs/blob/v0.0.1/build/commands/logs.ts)_
+_See code: [build/commands/logs.ts](https://github.com/vtex/cli-plugin-logs/blob/v0.1.0/build/commands/logs.ts)_
 <!-- commandsstop -->
