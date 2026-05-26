@@ -1,5 +1,5 @@
 - name: cli-plugin-logs
-  referenceId: PLACEHOLDER
+  referenceId: PHC9H1B4
   build:
     provider: dkcicd
     pipelines:
